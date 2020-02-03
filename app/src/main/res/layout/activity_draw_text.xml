@@ -7,13 +7,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/image"
+            android:src="@drawable/ic_launcher"
+            android:layout_alignParentTop="true"
+            android:layout_below="@id/editText1"
+            android:layout_height="100dp">
+
+        </ImageView>
+
         <EditText
             android:id="@+id/editText1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
             android:ems="10"
             android:inputType="textMultiLine"
             android:text="@string/slogan">
@@ -271,6 +282,7 @@
             android:layout_below="@+id/radioGroup2"
             android:layout_marginTop="10dip"
             android:text="@string/print" />
+
     </RelativeLayout>
 
 </ScrollView>

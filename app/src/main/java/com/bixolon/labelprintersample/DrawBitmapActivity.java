@@ -181,7 +181,8 @@ public class DrawBitmapActivity extends Activity implements OnClickListener
 		boolean dithering = mSpinner.getSelectedItemPosition()== 0?true:false;
 		
 		
-		MainActivity.mBixolonLabelPrinter.drawBitmap(bitmap, horizontalStartPosition, verticalStartPosition, width, level, dithering);
+		MainActivity.mBixolonLabelPrinter.drawBitmap(bitmap, horizontalStartPosition, verticalStartPosition,
+				width, level, dithering);
 		MainActivity.mBixolonLabelPrinter.print(1, 1);
 	}
 }
